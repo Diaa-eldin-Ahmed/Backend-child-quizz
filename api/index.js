@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const notFound = require("./middleware/notFoundMiddleWare");
-const error = require("./middleware/errorMiddleWare");
-const wordListRoute = require("./../src/route/words.route");
-const rankRoute = require("./../src/route/rank.route");
+const notFound = require("./src/middleware/notFoundMiddleWare");
+const error = require("./src/middleware/errorMiddleWare");
+const wordListRoute = require("./src/route/words.route");
+const rankRoute = require("./src/route/rank.route");
 
 const PORT = process.env.PORT || 3001;
 
