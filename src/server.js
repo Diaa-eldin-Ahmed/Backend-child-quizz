@@ -13,9 +13,10 @@ server.use(express.json());
 // CORS Middleware
 server.use(
     cors({
+        allowedHeaders: [],
         origin: [
-            "https://children-quizz-vite.vercel.app/",
-            "http://127.0.0.1:5173/",
+            "https://children-quizz-vite.vercel.app",
+            "http://localhost:5173/",
         ],
     })
 );
