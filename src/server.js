@@ -11,7 +11,14 @@ const server = express();
 server.use(express.json());
 
 // CORS Middleware
-server.use(cors());
+server.use(
+    cors({
+        origin: [
+            "https://children-quizz-vite.vercel.app/",
+            "http://127.0.0.1:5173/",
+        ],
+    })
+);
 
 server.use(wordListRoute);
 server.use(rankRoute);
