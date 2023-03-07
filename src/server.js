@@ -14,10 +14,7 @@ server.use(express.json());
 server.use(
     cors({
         preflightContinue: true,
-        origin: [
-            "https://children-quizz-vite.vercel.app",
-            "http://127.0.0.1:5173",
-        ],
+        origin: "*",
     })
 );
 
